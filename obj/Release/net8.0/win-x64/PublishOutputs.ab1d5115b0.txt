@@ -1,0 +1,5 @@
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\bin\public\SuperMerioWorld.exe
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\bin\public\ply.png
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\bin\public\SDL2.dll
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\bin\public\SDL2_image.dll
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\bin\public\SuperMerioWorld.pdb

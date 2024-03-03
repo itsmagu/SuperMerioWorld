@@ -1,0 +1,17 @@
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\bin\Debug\net8.0\SuperMerioWorld.exe
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\bin\Debug\net8.0\SuperMerioWorld.deps.json
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\bin\Debug\net8.0\SuperMerioWorld.runtimeconfig.json
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\bin\Debug\net8.0\SuperMerioWorld.dll
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\bin\Debug\net8.0\SuperMerioWorld.pdb
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\obj\Debug\net8.0\SuperMerioWorld.GeneratedMSBuildEditorConfig.editorconfig
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\obj\Debug\net8.0\SuperMerioWorld.AssemblyInfoInputs.cache
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\obj\Debug\net8.0\SuperMerioWorld.AssemblyInfo.cs
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\obj\Debug\net8.0\SuperMerioWorld.csproj.CoreCompileInputs.cache
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\obj\Debug\net8.0\SuperMerioWorld.dll
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\obj\Debug\net8.0\refint\SuperMerioWorld.dll
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\obj\Debug\net8.0\SuperMerioWorld.pdb
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\obj\Debug\net8.0\SuperMerioWorld.genruntimeconfig.cache
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\obj\Debug\net8.0\ref\SuperMerioWorld.dll
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\bin\Debug\net8.0\ply.png
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\bin\Debug\net8.0\SDL2.dll
+C:\Home\Source\CSharp\SuperMerioWorld\SuperMerioWorld\bin\Debug\net8.0\SDL2_image.dll

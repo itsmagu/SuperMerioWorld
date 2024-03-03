@@ -1,0 +1,124 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0/win-x64",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {},
+    ".NETCoreApp,Version=v8.0/win-x64": {
+      "SuperMerioWorld/1.0.0": {
+        "dependencies": {
+          "Microsoft.NET.ILLink.Tasks": "8.0.1",
+          "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "8.0.1"
+        },
+        "runtime": {
+          "SuperMerioWorld.dll": {}
+        }
+      },
+      "runtimepack.Microsoft.NETCore.App.Runtime.win-x64/8.0.1": {
+        "runtime": {
+          "System.Collections.Immutable.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.123.58001"
+          },
+          "System.Console.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.123.58001"
+          },
+          "System.Diagnostics.StackTrace.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.123.58001"
+          },
+          "System.IO.Compression.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.123.58001"
+          },
+          "System.IO.MemoryMappedFiles.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.123.58001"
+          },
+          "System.Private.CoreLib.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.123.58001"
+          },
+          "System.Reflection.Metadata.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.123.58001"
+          }
+        },
+        "native": {
+          "Microsoft.DiaSymReader.Native.amd64.dll": {
+            "fileVersion": "14.29.30152.0"
+          },
+          "System.IO.Compression.Native.dll": {
+            "fileVersion": "8.0.123.58001"
+          },
+          "clretwrc.dll": {
+            "fileVersion": "8.0.123.58001"
+          },
+          "clrgc.dll": {
+            "fileVersion": "8.0.123.58001"
+          },
+          "clrjit.dll": {
+            "fileVersion": "8.0.123.58001"
+          },
+          "coreclr.dll": {
+            "fileVersion": "8.0.123.58001"
+          },
+          "createdump.exe": {
+            "fileVersion": "8.0.123.58001"
+          },
+          "hostfxr.dll": {
+            "fileVersion": "8.0.123.58001"
+          },
+          "hostpolicy.dll": {
+            "fileVersion": "8.0.123.58001"
+          },
+          "mscordaccore.dll": {
+            "fileVersion": "8.0.123.58001"
+          },
+          "mscordaccore_amd64_amd64_8.0.123.58001.dll": {
+            "fileVersion": "8.0.123.58001"
+          },
+          "mscordbi.dll": {
+            "fileVersion": "8.0.123.58001"
+          },
+          "mscorrc.dll": {
+            "fileVersion": "8.0.123.58001"
+          },
+          "msquic.dll": {
+            "fileVersion": "2.2.3.0"
+          }
+        }
+      },
+      "Microsoft.NET.ILLink.Tasks/8.0.1": {}
+    }
+  },
+  "libraries": {
+    "SuperMerioWorld/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "runtimepack.Microsoft.NETCore.App.Runtime.win-x64/8.0.1": {
+      "type": "runtimepack",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NET.ILLink.Tasks/8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ADdJXuKNjwZDfBmybMnpvwd5CK3gp92WkWqqeQhW4W+q4MO3Qaa9QyW2DcFLAvCDMcCWxT5hRXqGdv13oon7nA==",
+      "path": "microsoft.net.illink.tasks/8.0.1",
+      "hashPath": "microsoft.net.illink.tasks.8.0.1.nupkg.sha512"
+    }
+  },
+  "runtimes": {
+    "win-x64": [
+      "win",
+      "any",
+      "base"
+    ]
+  }
+}
