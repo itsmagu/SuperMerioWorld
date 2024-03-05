@@ -1,4 +1,5 @@
 ﻿global using static System.Console; // All files should be able to log to console
+global using SuperMerioWorld.sys;   // I have my own Vector Struct with Int instead of float
 global using static SDL2.SDL;       // All files should be able to call SDL2
 global using static SDL2.SDL_image;
 using System;
@@ -22,7 +23,7 @@ if (window == IntPtr.Zero) WriteLine($"CreateWindow() ERROR : {SDL_GetError()}")
 IntPtr renderer = SDL_CreateRenderer(
     window,
     -1,
-    SDL_RendererFlags.SDL_RENDERER_ACCELERATED | SDL_RendererFlags.SDL_RENDERER_PRESENTVSYNC
+    SDL_RendererFlags.SDL_RENDERER_ACCELERATED //| SDL_RendererFlags.SDL_RENDERER_PRESENTVSYNC
 );
 if (renderer == IntPtr.Zero) WriteLine($"CreateRenderer() ERROR : {SDL_GetError()}");
 #endregion
@@ -30,6 +31,7 @@ if (renderer == IntPtr.Zero) WriteLine($"CreateRenderer() ERROR : {SDL_GetError(
 #region MainLoop
 bool quitOnNext = false;
 SuperMerioWorldGame CurrentGame = new SuperMerioWorldGame(renderer);
+uint lastTick = 0, temp = 0, lagTime = 0;
 while (!quitOnNext){
     #region Input
     // Poll events that are create every input
@@ -41,11 +43,28 @@ while (!quitOnNext){
         }
     }
     #endregion
+    uint start_time = SDL_GetTicks();
+
     #region Rendering
+    SDL_SetRenderDrawColor(
+        renderer,
+        135,
+        200,
+        235,
+        255
+    );
     SDL_RenderClear(renderer);
     CurrentGame.Process(renderer);
     SDL_RenderPresent(renderer);
     #endregion
+    uint frame_time = SDL_GetTicks() - start_time;
+    uint fps = (frame_time > 0) ? 1000 / frame_time : 0;
+    temp = SDL_GetTicks();
+    if ((temp - lastTick) > 1){
+        SDL_Log($"TickStamp:{temp}, Lag: {temp - lagTime}, {temp - lastTick} [Fps:{fps}]");
+        lagTime = temp;
+    }
+    lastTick = temp;
 }
 #endregion
 #region Quit
