@@ -28,24 +28,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.SuperMerioWorld.executor": "Run",
-    "Publish to folder.Publish SuperMerioWorld to folder.executor": "Run",
-    "Publish to folder.Publish SuperMerioWorld.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.SuperMerioWorld.executor&quot;: &quot;Run&quot;,
+    &quot;Native Executable.SuperMerioWorld AOT.executor&quot;: &quot;Run&quot;,
+    &quot;Publish to folder.Publish SuperMerioWorld to folder.executor&quot;: &quot;Run&quot;,
+    &quot;Publish to folder.Publish SuperMerioWorld.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Angel\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Angel\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\Angel\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\SONY\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\SONY\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\SONY\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Project.SuperMerioWorld">
     <configuration name="Publish SuperMerioWorld" type="DotNetFolderPublish" factoryName="Publish to folder">
       <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" runtime="win-x64" self_contained="true" target_folder="$PROJECT_DIR$/bin/publish" target_framework="net8.0" trim_unused_assemblies="true" uuid_high="2053853374967793141" uuid_low="-8913788282965004231" />
@@ -69,8 +71,19 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="SuperMerioWorld AOT" type="RunNativeExe" factoryName="Native Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/bin/publish/SuperMerioWorld.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bin/publish" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2">
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="Publish SuperMerioWorld" run_configuration_type="DotNetFolderPublish" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue=".NET Project.SuperMerioWorld" />
+      <item itemvalue="Native Executable.SuperMerioWorld AOT" />
       <item itemvalue="Publish to folder.Publish SuperMerioWorld" />
     </list>
   </component>

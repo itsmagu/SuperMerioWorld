@@ -28,6 +28,8 @@
         <None Update="grid.png">
           <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
+        <None Remove=".gitignore" />
+        <None Remove=".gitattributes" />
     </ItemGroup>
 
 </Project>

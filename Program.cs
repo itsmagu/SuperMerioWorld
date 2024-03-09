@@ -30,9 +30,10 @@ if (renderer == IntPtr.Zero) WriteLine($"CreateRenderer() ERROR : {SDL_GetError(
 
 #region MainLoop
 bool quitOnNext = false;
-SuperMerioWorldGame CurrentGame = new SuperMerioWorldGame(renderer);
-uint lastTick = 0, temp = 0, lagTime = 0;
+SuperMerioWorldGame currentGame = new SuperMerioWorldGame(renderer);
+uint lastTick = 0, temp, lagTime = 0, tick = 0;
 while (!quitOnNext){
+    ++tick;
     #region Input
     // Poll events that are create every input
     while (SDL_PollEvent(out SDL_Event @event) == 1){
@@ -43,7 +44,9 @@ while (!quitOnNext){
         }
     }
     #endregion
-    uint start_time = SDL_GetTicks();
+
+    // Save time for statistics
+    uint startTime = SDL_GetTicks();
 
     #region Rendering
     SDL_SetRenderDrawColor(
@@ -54,19 +57,24 @@ while (!quitOnNext){
         255
     );
     SDL_RenderClear(renderer);
-    CurrentGame.Process(renderer);
+    currentGame.Process(renderer);
     SDL_RenderPresent(renderer);
     #endregion
-    uint frame_time = SDL_GetTicks() - start_time;
-    uint fps = (frame_time > 0) ? 1000 / frame_time : 0;
+
+    #region Time Stats
+    uint frameTime = SDL_GetTicks() - startTime;
     temp = SDL_GetTicks();
-    if ((temp - lastTick) > 1){
-        SDL_Log($"TickStamp:{temp}, Lag: {temp - lagTime}, {temp - lastTick} [Fps:{fps}]");
+    WriteLine($"SDL:{temp} TICK:{tick}");
+    if ((temp - lastTick) > 16){
+        // WriteLine($"OverTick on t{temp}, lagtime: {temp - lagTime}, lasttick: {temp - lastTick}");
+        WriteLine($"OverTick on t×{temp} with {temp - lagTime} lagtime");
         lagTime = temp;
     }
     lastTick = temp;
+    #endregion
 }
 #endregion
+
 #region Quit
 SDL_DestroyRenderer(renderer);
 SDL_DestroyWindow(window);
